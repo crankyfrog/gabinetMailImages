@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#E4F9FF"> <!-- This will set the mobile browser's theme color -->
+    <title>Appointment Confirmation</title>
+    <style>
+        /* Force light mode styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #E4F9FF !important;
+            color: #333 !important;
+        }
+        table {
+            border-spacing: 0;
+            padding: 0px 25px 25px 15px;
+            font-family: Arial, sans-serif;
+        }
+        td {
+            vertical-align: middle;
+        }
+        h1 {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            margin-top: 16px;
+            margin-bottom: 24px;
+        }
+        p {
+            margin: 0px;
+            margin-bottom: 16px;
+        }
+        .time {
+            padding-left: 20px;
+            margin-bottom: 0px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff !important;
+            border-radius: 12px !important;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            color: #7a6ee3 !important;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 8px;
+            font-size: 12px;
+            color: #333 !important;
+            width: 80%;
+        }
+        .cta {
+            width: 20%;
+            padding-left: 0px;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 8px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .blue-button {
+            color: #7a6ee3 !important;
+            border: 1px solid #7a6ee3 !important;
+        }
+        .red-button {
+            border: 1px solid #FF4400 !important;
+            color: #FF4400 !important;
+        }
+        .footer {
+            font-size: 12px;
+            color: #666 !important;
+            text-align: left;
+            padding: 0px 8px 8px 8px;
+            width: 70%;
+        }
+        .icon {
+            width: 20px;
+            vertical-align: middle;
+            padding-bottom: 2px;
+        }
+        hr {
+            margin-top: 24px;
+            margin-bottom: 16px;
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                width: 90% !important;
+            }
+            .content {
+                padding: 8px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" bgcolor="#E4F9FF" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="header">
+                <img src="logo-mini.png" alt="gabinet lekarski ewa paluch" width="500">
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <table class="container" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="content">
+                            <h1>Twoja wizyta w Gabinecie została zarezerwowana.</h1>
+                            <p>Podsumowanie wizyty:</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">
+                            <img class="icon" src="./calendar_month.png">
+                            <strong>03/12/2025</strong><br>
+                            <p class="time">godzina <strong>10:00pm</strong></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">
+                            <img class="icon" src="./account_circle.png"> Lekarz: Ewa Paluch
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="content">
+                            <p>
+                                <img class="icon" src="./location_on.png"> ul. Walczaka 12a, nr 4,<br> 66-400 Gorzów Wielkopolski
+                            </p>
+                        </td>
+                        <td class="cta">
+                            <a href="#" class="button blue-button">Jak dojechać?</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+                    <tr>
+                        <td class="footer">
+                            <p>
+                                Jeśli nie możesz skorzystać z wizyty, uprzejmie prosimy o jej odwołanie. Umożliwi to innemu pacjentowi skorzystanie z terminu.
+                            </p>
+                        </td>
+                        <td class="cta">
+                            <a href="#" class="button red-button">Odwołaj wizytę</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
